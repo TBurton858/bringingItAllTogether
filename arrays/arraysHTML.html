@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W11 Array Example</title>
+    <script src = "arrayscode.js"></script>
+    <link href = "arraysLook.css" rel="stylesheet">
 </head>
 <body>
     <h1>Pizza Chef Array Example</h1>
@@ -18,34 +20,4 @@
     <button onclick = "updateChefStats();">Update Stats</button>
 
     <p>Toppings: <span id = "spnToppings"></span></p>
-
-    <!--JavaScript code goes between script tags-->
-    <script>
-        //create some toppings variabls
-        /*
-        var topping1 = "Pepperoni";
-        var topping2 = "Mushrooms";
-        var topping3 = "Olives";
-        var topping4 = "Sausages";
-        var topping5 = "Ham";
-        var topping6 = "Anchovies";
-        var topping7 = "Pineapple";
-        var topping8 = "Cinnamon";
-        */
-
-        //document.getElementById("spnToppings").innerHTML = topping1 + ", " + topping2; goes on you get the point
-
-        //The array version
-        var arrToppings = ["Pepperoni", "Mushrooms", "Olives", "Sausages", "Ham", "Anchovies", "Pineapple", "Cinnamon"];
-
-        //Print out the toppings in the array using a loop
-        //When looping through an array, start off with the counter = 0
-        //Keep looking until the counter == the number of elements in the array
-        //Increase the counter by 1 each time the loop runs to work with each element in the array
-        for (var i = 0; i < arrToppings.length; i++)
-        {
-            document.getElementById("spnToppings").innerHTML += arrToppings[i] + ", ";
-        }
-    </script>
-</body>
 </html>
